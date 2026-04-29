@@ -18,7 +18,7 @@ function Footer() {
             <FaFacebook />
           </a>
         
-         <a href="gyan" target="_blank" className="hover:text-pink-500 hover:scale-110 transition">
+         <a href=" https://www.instagram.com/gyanadewan?igsh=ZWc4eHVhcHAyOHJ2&utm_source=ig_contact_invite" target="_blank" className="hover:text-pink-500 hover:scale-110 transition">
             <FaInstagram />
           </a>
 

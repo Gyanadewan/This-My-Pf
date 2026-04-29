@@ -5,35 +5,47 @@ function Hero() {
   return (
     <section
       id="home"
-      className="min-h-screen flex items-center justify-center text-center relative pt-20 scroll-mt-24"
+      className="min-h-screen flex items-center justify-center text-center relative pt-20 scroll-mt-24 bg-gray-950 text-white"
     >
-      {/* Floating BG glow */}
-      <div className="absolute w-96 h-96 bg-green-500/20 blur-3xl rounded-full animate-pulse" />
+      {/* 🔥 Soft Background Glow */}
+      <div className="absolute w-80 h-80 bg-gradient-to-r from-purple-400/20 to-blue-400/20 blur-3xl rounded-full animate-pulse" />
 
       <div className="z-10 space-y-6">
-        <img
-          src={Profile}
-          alt="profile"
-          className="w-40 h-40 md:w-52 md:h-52 mx-auto rounded-full object-cover 
-          border-4 border-transparent 
-          bg-gradient-to-r from-purple-500 to-pink-500 p-1 shadow-lg"
-        />
+        
+        {/* ✅ Soft Gradient Profile (LOW INTENSITY) */}
+        <div className="p-[2px] rounded-full bg-gradient-to-r from-purple-400/50 to-pink-400/40 inline-block">
+          <img
+            src={Profile}
+            alt="profile"
+            className="w-40 h-40 md:w-52 md:h-52 rounded-full object-cover bg-gray-950"
+          />
+        </div>
 
-        <h1 className="text-xl md:text-5xl font-bold">
-          Hi, I'm <span className="text-green-400">Gyana Ratan Dewan</span>
+        {/* ✅ Gradient Name */}
+        <h1 className="text-2xl md:text-5xl font-bold">
+          Hi, I'm{" "}
+          <span className="bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
+            Gyana Ratan Dewan
+          </span>
         </h1>
 
-        <p className="text-gray-400 max-w-md mx-auto">
-          I build modern, fast & animated web applications using React &
-          Tailwind CSS.
+        {/* ✅ Bio */}
+        <p className="text-gray-400 max-w-xl mx-auto">
+          I'm a{" "}
+          <span className="bg-gradient-to-r from-green-400 to-blue-400 bg-clip-text text-transparent font-semibold">
+            Front-End Developer
+          </span>{" "}
+          focused on building clean and modern web interfaces.
         </p>
 
+        {/* ✅ Button */}
         <a
           href="#projects"
-          className="px-6 py-3 bg-green-500 rounded-full text-black font-semibold hover:scale-105 transition"
+          className="inline-block px-6 py-3 bg-gradient-to-r from-green-400 to-blue-500 text-white rounded-full font-semibold hover:scale-105 hover:shadow-lg transition duration-100"
         >
           View Projects
         </a>
+
       </div>
     </section>
   );
