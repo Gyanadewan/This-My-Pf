@@ -20,7 +20,7 @@ function Experience() {
         My <span className="text-primary">Skills</span>
       </h2>
 
-      <p className="text-center text-gray-400 mb-12">
+      <p className="text-center  text-gray-400 mb-12">
         Technologies I work with
       </p>
 

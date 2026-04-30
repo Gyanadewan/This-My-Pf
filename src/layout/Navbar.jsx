@@ -28,7 +28,7 @@ function Navbar() {
 </h1>
 
         {/* Desktop Menu */}
-        <div className="hidden md:flex items-center gap-8 text-sm text-white">
+        <div className="hidden md:flex font-medium items-center gap-8 text-sm text-white">
 
           <a href="#home" className="hover:text-cyan-400 transition">Home</a>
           <a href="#about" className="hover:text-cyan-400 transition">About</a>
