@@ -21,12 +21,14 @@ function Navbar() {
       <nav className="container mx-auto px-6 py-4 flex justify-between items-center">
 
         {/* Logo */}
-        <h1 className="font-bold text-xl text-white">
-          Gyana<span className="text-primary">Dewan</span>
-        </h1>
+      <h1 className="font-bold text-xl">
+  <span className="bg-gradient-to-r from-purple-400 via-pink-400 to-blue-400 bg-clip-text text-transparent">
+    Gyana Dewan
+  </span>
+</h1>
 
         {/* Desktop Menu */}
-        <div className="hidden md:flex items-center gap-8 text-sm text-white">
+        <div className="hidden md:flex font-medium items-center gap-8 text-sm text-white">
 
           <a href="#home" className="hover:text-cyan-400 transition">Home</a>
           <a href="#about" className="hover:text-cyan-400 transition">About</a>
