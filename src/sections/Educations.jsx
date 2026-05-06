@@ -37,7 +37,7 @@ export default function Education() {
   }, []);
 
   return (
-    <section className="bg-slate-900 text-white py-10">
+    <section id="education" className="bg-slate-900 text-white py-10">
       <h2 className="text-3xl md:text-5xl text-center mb-10 font-bold">
         My Education
       </h2>

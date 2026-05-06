@@ -27,7 +27,7 @@ function Projects() {
 
           <a
             href="#contact"
-            className="px-6 py-3 rounded-xl bg-green-500 text-black font-semibold hover:bg-green-400 transition"
+            className="px-6 py-3 rounded-xl bg-green-500 text-black font-semibold hover:bg-blue-600 transition"
           >
             Next →
           </a>

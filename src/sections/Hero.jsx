@@ -29,14 +29,14 @@ function Hero() {
           </span>
         </h1>
 
-        {/* ✅ Bio */}
+        {/* ✅ Bio
         <p className="text-gray-400 max-w-xl mx-auto px-2">
           I'm a{" "}
           <span className="bg-gradient-to-r from-green-400 to-blue-400 bg-clip-text text-transparent font-semibold">
             Front-End Developer
           </span>{" "}
           focused on building clean and modern web interfaces.
-        </p>
+        </p> */}
 
         {/* ✅ Button */}
        <a
@@ -44,7 +44,7 @@ function Hero() {
     className="relative inline-block px-6 py-3 rounded-full font-semibold text-white overflow-hidden group"
    >
     {/* Background layer */}
-   <span className="absolute inset-0 bg-gradient-to-r from-green-400 to-blue-500 transition-opacity duration-300 group-hover:opacity-0"></span>
+   <span className="absolute inset-0 bg-gradient-to-r from-orange-700 to-purple-600 transition-opacity duration-300 group-hover:opacity-0"></span>
 
     {/* Hover alternative background (optional dark/transparent feel) */}
     <span className="absolute inset-0 bg-gray-800 opacity-0 transition-opacity duration-300 group-hover:opacity-100"></span>
