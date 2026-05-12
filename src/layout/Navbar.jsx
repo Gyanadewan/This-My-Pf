@@ -10,7 +10,7 @@ function Navbar() {
 
         {/* Logo */}
         <h1 className="font-bold text-xl">
-          <span className="bg-gradient-to-r from-purple-400 via-pink-400 to-blue-400 bg-clip-text text-transparent">
+          <span className="bg-gradient-to-r  from-purple-400 via-pink-400 to-blue-400 bg-clip-text text-transparent">
             Gyana Dewan
           </span>
         </h1>
