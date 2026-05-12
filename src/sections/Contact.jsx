@@ -1,5 +1,6 @@
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
+import { toast } from "react-toastify";
 import {
   FaPhone,
   FaEnvelope,
@@ -12,6 +13,8 @@ import {
   FaTwitter ,
 } from "react-icons/fa";
 
+
+     
 function Contact() {
   const form = useRef();
   const [loading, setLoading] = useState(false);
@@ -25,7 +28,8 @@ function Contact() {
     const message = formData.get("message");
 
     if (!name || !email || !message) {
-      alert("Please fill all fields ⚠️");
+       toast.error("Something went wrong")
+
       return;
     }
 
@@ -36,7 +40,7 @@ function Contact() {
         publicKey: "KtyDf98IddMCFEF_j",
       })
       .then(() => {
-        // alert("Message sent successfully ✅");
+        toast.success("Message sent successfully")
         form.current.reset();
       })
       .catch((error) => {
@@ -46,6 +50,8 @@ function Contact() {
         setLoading(false);
       });
   };
+  
+
 
   return (
     <section id="contact" className="py-32 container mx-auto px-6 text-white">
@@ -143,7 +149,7 @@ function Contact() {
             className="p-3 rounded bg-gray-900 border border-gray-700 h-32"
           />
 
-          <button
+          <button 
             type="submit"
             disabled={loading}
             className="bg-green-500 py-3 rounded font-semibold hover:scale-105 transition disabled:opacity-50"

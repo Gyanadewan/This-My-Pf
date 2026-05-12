@@ -1,4 +1,5 @@
 import React from 'react'
+import { ToastContainer, toast } from 'react-toastify';
 import Navbar from './layout/Navbar'
 import Hero from './sections/Hero'
 import About from './sections/About'
@@ -22,6 +23,7 @@ function App() {
         <Contact></Contact>
          <Footer></Footer>
        </main>
+       <ToastContainer position="top-right" autoClose={3000} />
     </div>
   )
 }
