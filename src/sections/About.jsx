@@ -11,7 +11,7 @@ function About() {
       transition={{ duration: 0.8, ease: "easeOut" }}
       viewport={{ once: true, amount: 0.3 }}
     >
-      {/* Title */}
+    
       <motion.h2
         className="text-3xl font-bold mb-6 text-white"
         initial={{ opacity: 0, y: 20 }}
@@ -22,7 +22,6 @@ function About() {
         About Me
       </motion.h2>
 
-      {/* Text */}
       <motion.p
         className="text-gray-400 text-xl max-w-3xl leading-relaxed"
         initial={{ opacity: 0, y: 30 }}
@@ -30,16 +29,13 @@ function About() {
         transition={{ delay: 0.3, duration: 0.7 }}
         viewport={{ once: true }}
       >
-        Hi, I am Gyana Ratan Dewan. I am currently a 3rd-year student at
-        National Polytechnic College, studying Computer Science and
-        Technology. I am passionate about Web Development and Software
-        Engineering, and I am continuously learning new technologies, skills,
-        and libraries to improve myself.
-        <br />
-        <br />
-        Outside of academics, I enjoy playing chess and football with my
-        friends in my free time. My goal is to become a skilled and
-        professional developer in the future.
+     Hi, I am Gyana Ratan Dewan, a 3rd-year student at National Polytechnic College, studying Computer Science and Technology. I am a passionate Web Developer with a strong interest in Software Engineering, and I am continuously improving my skills by learning modern technologies, tools, and libraries.
+    <br />
+    <br />
+     Outside my academic studies, I enjoy reading books, which helps me expand my knowledge and improve my thinking ability. I also like playing chess and football with friends, which helps me stay active and refreshed.
+    <br />
+    <br />
+     My goal is to become a skilled and professional software developer, build impactful real-world projects, and contribute meaningfully to the tech industry.
       </motion.p>
     </motion.section>
   );

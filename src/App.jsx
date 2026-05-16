@@ -4,7 +4,6 @@ import Navbar from './layout/Navbar'
 import Hero from './sections/Hero'
 import About from './sections/About'
 import Projects from './sections/Projects'
-import Testimonials from './sections/Testimonials'
 import Contact from './sections/Contact'
 import Skills from './sections/skills'
 import Footer from './layout/Footer'
@@ -18,7 +17,6 @@ function App() {
         <About></About>
         <Projects></Projects>
          <Skills></Skills>
-        <Testimonials></Testimonials>
         <Education></Education>
         <Contact></Contact>
          <Footer></Footer>
