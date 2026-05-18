@@ -56,20 +56,23 @@ export default function Education() {
                 : "md:pl-8 md:ml-auto"
             }`}
           >
-            <div
-              className={`bg-slate-800 p-5 rounded-xl border border-cyan-400 transition-all duration-700 text-left
-              ${
-                visible.includes(index)
-                  ? "opacity-100 translate-y-0"
-                  : "opacity-0 translate-y-10"
-              }`}
-            >
+               <div
+                 className={`bg-slate-800 p-5 rounded-xl shadow-md shadow-blue-600
+               hover:scale-110 border border-cyan-500
+              transform transition-all duration-500 ease-in-out text-left
+             ${
+            visible.includes(index)
+          ? "opacity-100 translate-y-0"
+           : "opacity-0 translate-y-10"
+         }`}
+>
               <h3 className="text-lg font-semibold">{item.title}</h3>
               <p className="text-sm text-cyan-300">{item.time}</p>
               <p className="mt-2">{item.institute}</p>
               <p className="text-sm mt-2 text-gray-300">
                 {item.desc}
               </p>
+              
             </div>
           </div>
         ))}

@@ -5,9 +5,7 @@ import {
   FaPhone,
   FaEnvelope,
   FaMapMarkerAlt,
-  FaFacebook,
   FaWhatsapp,
-  FaInstagram,
   FaGithub,
   FaLinkedin,
   FaTwitter ,
@@ -64,7 +62,7 @@ function Contact() {
       <div className="flex flex-col md:flex-row gap-10">
 
         {/* LEFT - CONTACT INFO */}
-        <div className="w-full md:w-1/2 border-2 border-cyan-400 rounded-2xl p-8 shadow-lg bg-gray-950 hover:scale-[1.02] transition duration-300">
+        <div className="w-full md:w-1/2 border-2 border-cyan-400 rounded-2xl p-8 shadow-lg bg-gray-950 hover:scale-110  transform transition-all duration-500 ease-in-out">
 
           <h2 className="text-2xl font-semibold text-center mb-8">
             Contact Information
@@ -120,7 +118,7 @@ function Contact() {
         <form
           ref={form}
           onSubmit={sendEmail}
-          className="w-full md:w-1/2 border-2 border-cyan-400 rounded-2xl p-8 shadow-lg bg-gray-950 flex flex-col gap-4 hover:scale-[1.02] transition duration-300"
+          className="w-full md:w-1/2 border-2 border-cyan-400 rounded-2xl p-8 shadow-lg bg-gray-950 flex flex-col gap-4 hover:scale-110   transition-all duration-500 ease-in-out"
         >
           <input
             type="text"

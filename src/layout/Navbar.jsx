@@ -6,7 +6,7 @@ function Navbar() {
 
   return (
     <header className="fixed top-0 w-full z-50 bg-black/30 backdrop-blur-md">
-      <nav className="container mx-auto px-6 py-4 flex justify-between items-center">
+      <nav className="container mx-auto px-6 py-4 flex justify-between items-center border-b-2 border-t border-cyan-400/40 shadow-md shadow-cyan-500/10 md:border-b-0">
 
         {/* Logo */}
         <h1 className="font-bold text-xl">
