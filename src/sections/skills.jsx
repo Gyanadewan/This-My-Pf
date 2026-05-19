@@ -8,9 +8,9 @@ function Skills() {
   const skills = [
     { name: 'HTML', icon: <FaHtml5 className="text-orange-500 text-6xl" /> },
     { name: 'CSS', icon: <FaCss3Alt className="text-blue-500 text-6xl" /> },
+    { name: 'Tailwind CSS', icon: <SiTailwindcss className="text-sky-400 text-6xl" /> },
     { name: 'JavaScript', icon: <FaJs className="text-yellow-400 text-6xl" /> },
     { name: 'React', icon: <FaReact className="text-cyan-400 text-6xl" /> },
-    { name: 'Tailwind CSS', icon: <SiTailwindcss className="text-sky-400 text-6xl" /> },
     { name: 'Next.Js', icon: <RiNextjsFill className=' text-6xl  text-white' /> },
    
   ]

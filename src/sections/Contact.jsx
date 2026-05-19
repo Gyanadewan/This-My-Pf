@@ -8,11 +8,9 @@ import {
   FaWhatsapp,
   FaGithub,
   FaLinkedin,
-  FaTwitter ,
+  FaTwitter,
 } from "react-icons/fa";
 
-
-     
 function Contact() {
   const form = useRef();
   const [loading, setLoading] = useState(false);
@@ -26,8 +24,7 @@ function Contact() {
     const message = formData.get("message");
 
     if (!name || !email || !message) {
-       toast.error("Something went wrong")
-
+      toast.error("Something went wrong");
       return;
     }
 
@@ -38,23 +35,21 @@ function Contact() {
         publicKey: "KtyDf98IddMCFEF_j",
       })
       .then(() => {
-        toast.success("Message sent successfully")
+        toast.success("Message sent successfully");
         form.current.reset();
       })
       .catch((error) => {
         console.log(error);
+        toast.error("Failed to send message");
       })
       .finally(() => {
         setLoading(false);
       });
   };
-  
-
 
   return (
     <section id="contact" className="py-20 container mx-auto px-6 text-white">
-
-      <h2 className="text-3xl  font-bold mb-10 text-center">
+      <h2 className="text-3xl font-bold mb-10 text-center">
         Contact Me
       </h2>
 
@@ -62,7 +57,7 @@ function Contact() {
       <div className="flex flex-col md:flex-row gap-10">
 
         {/* LEFT - CONTACT INFO */}
-        <div className="w-full md:w-1/2 border-2 border-cyan-400 rounded-2xl p-8 shadow-lg bg-gray-950 hover:scale-110  transform transition-all duration-500 ease-in-out">
+        <div className="w-full md:w-1/2 border-2 border-cyan-400 rounded-2xl p-8 shadow-lg bg-gray-950 transition-all ease-in-out hover:shadow-cyan-500/80 hover:border-cyan-600">
 
           <h2 className="text-2xl font-semibold text-center mb-8">
             Contact Information
@@ -91,59 +86,58 @@ function Contact() {
               <p className="font-semibold">Chattogram, Bangladesh</p>
             </div>
           </div>
+
           <h3 className="text-xl font-semibold mb-4">Find Me On</h3>
 
-     
-         <div className="flex gap-5 text-2xl">
-      <a href="https://www.linkedin.com/in/gyana-dewan-144827369" target="_blank" rel="noopener noreferrer">
-      <FaLinkedin className="hover:text-blue-400 cursor-pointer" />
-      </a>
+          <div className="flex gap-5 text-2xl">
+            <a href="https://www.linkedin.com/in/gyana-dewan-144827369" target="_blank" rel="noopener noreferrer">
+              <FaLinkedin className="hover:text-blue-400 cursor-pointer transition" />
+            </a>
 
-       <a href="https://whatsapp.com/dl/" target="_blank" rel="noopener noreferrer">
-        <FaWhatsapp className="hover:text-green-500 cursor-pointer" />
-         </a>
+            <a href="https://whatsapp.com/dl/" target="_blank" rel="noopener noreferrer">
+              <FaWhatsapp className="hover:text-green-500 cursor-pointer transition" />
+            </a>
 
-         <a href="https://x.com/gyana_dewa25442" target="_blank" className="hover:text-sky-400 hover:scale-110 transition">
-        <FaTwitter />
-           </a>
+            <a href="https://x.com/gyana_dewa25442" target="_blank" rel="noopener noreferrer">
+              <FaTwitter className="hover:text-sky-400 cursor-pointer transition" />
+            </a>
 
-         <a href="https://github.com/Gyanadewan" target="_blank" rel="noopener noreferrer">
-        <FaGithub className="hover:text-gray-400 cursor-pointer" />
-       </a>
-         
-  </div>
+            <a href="https://github.com/Gyanadewan" target="_blank" rel="noopener noreferrer">
+              <FaGithub className="hover:text-gray-400 cursor-pointer transition" />
+            </a>
+          </div>
         </div>
 
         {/* RIGHT - FORM */}
         <form
           ref={form}
           onSubmit={sendEmail}
-          className="w-full md:w-1/2 border-2 border-cyan-400 rounded-2xl p-8 shadow-lg bg-gray-950 flex flex-col gap-4 hover:scale-110   transition-all duration-500 ease-in-out"
+          className="w-full md:w-1/2 border-2 border-cyan-400 rounded-2xl p-8 shadow-lg bg-gray-950 flex flex-col gap-4 transition-all ease-in-out hover:shadow-cyan-500/80 hover:border-cyan-600"
         >
           <input
             type="text"
             name="user_name"
             placeholder="Your name"
-            className="p-3 rounded bg-gray-900 border border-gray-700"
+            className="p-3 rounded bg-gray-900 border border-gray-700 focus:outline-none focus:border-cyan-400"
           />
 
           <input
             type="email"
             name="user_email"
             placeholder="Your email"
-            className="p-3 rounded bg-gray-900 border border-gray-700"
+            className="p-3 rounded bg-gray-900 border border-gray-700 focus:outline-none focus:border-cyan-400"
           />
 
           <textarea
             name="message"
             placeholder="Message"
-            className="p-3 rounded bg-gray-900 border border-gray-700 h-32"
+            className="p-3 rounded bg-gray-900 border border-gray-700 h-32 focus:outline-none focus:border-cyan-400"
           />
 
-          <button 
+          <button
             type="submit"
             disabled={loading}
-            className="bg-green-500 py-3 rounded font-semibold hover:scale-105 transition disabled:opacity-50"
+            className="bg-green-500 py-3 rounded font-semibold hover:bg-green-600 transition disabled:opacity-50"
           >
             {loading ? "Sending..." : "Send Message"}
           </button>
