@@ -1,16 +1,18 @@
 import React from 'react'
 import { motion } from 'framer-motion'
-import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaPython } from 'react-icons/fa'
+import { FaHtml5, FaCss3Alt, FaJs, FaReact} from 'react-icons/fa'
 import { SiTailwindcss } from 'react-icons/si'
+import { RiNextjsFill } from "react-icons/ri";
 
 function Skills() {
   const skills = [
-    { name: 'HTML', icon: <FaHtml5 className="text-orange-500 text-5xl" /> },
-    { name: 'CSS', icon: <FaCss3Alt className="text-blue-500 text-5xl" /> },
-    { name: 'JavaScript', icon: <FaJs className="text-yellow-400 text-5xl" /> },
-    { name: 'React', icon: <FaReact className="text-cyan-400 text-5xl" /> },
-    { name: 'Tailwind CSS', icon: <SiTailwindcss className="text-sky-400 text-5xl" /> },
-    { name: 'Python', icon: <FaPython className="text-green-400 text-5xl" /> },
+    { name: 'HTML', icon: <FaHtml5 className="text-orange-500 text-6xl" /> },
+    { name: 'CSS', icon: <FaCss3Alt className="text-blue-500 text-6xl" /> },
+    { name: 'JavaScript', icon: <FaJs className="text-yellow-400 text-6xl" /> },
+    { name: 'React', icon: <FaReact className="text-cyan-400 text-6xl" /> },
+    { name: 'Tailwind CSS', icon: <SiTailwindcss className="text-sky-400 text-6xl" /> },
+    { name: 'Next.Js', icon: <RiNextjsFill className=' text-6xl  text-white' /> },
+   
   ]
 
   return (
@@ -32,8 +34,8 @@ function Skills() {
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             whileHover={{ scale: 1.1 }}
-            transition={{ duration: 0.4, delay: index * 0.1 }}
-            className="bg-gray-900/60 border border-gray-700 rounded-2xl p-8 flex flex-col items-center hover:border-primary transition"
+            transition={{ duration: 0.5, delay: index * 0.1 }}
+            className="bg-gray-900/60 border border-gray-600 rounded-2xl p-8 flex flex-col items-center hover:border-purple-600 transition"
           >
             {skill.icon}
             <p className="mt-4 font-medium">{skill.name}</p>
